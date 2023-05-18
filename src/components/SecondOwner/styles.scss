@@ -1,0 +1,38 @@
+.secondWrapper{
+    margin-top: 40px;
+    .secondItem{
+        margin-bottom: 40px;
+    }
+}
+
+.uploadBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FBFBFB;
+    border: 1px dashed #E4E5E7;
+    border-radius: 7px;
+    width: 100%;
+    p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #999999;
+        opacity: 0.7;
+        padding: 0px 18px;
+        margin-bottom: 0px;
+    }
+    .uploadButton{
+        background: #5795FD;
+        border-radius: 0px 7px 7px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 18px;
+        img{
+            margin-bottom: 0px !important;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.addSocialMedia{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img{
+        margin-right: 10px;
+    }
+    p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #3E85FD;
+        opacity: 0.87;
+    }
+}

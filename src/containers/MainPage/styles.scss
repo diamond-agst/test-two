@@ -1,0 +1,142 @@
+.mainWrapper{
+    display: flex;
+    min-height: 100vh;
+    .stepperBlock{
+        width: 30%;
+        background: #FAFAFA;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 80px;
+        .stepperHeading{
+            margin-bottom: 63px;
+            h1{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 19px;
+                line-height: 23px;
+                color: #1B1B1B;
+                margin-bottom: 20px;
+            }
+            p{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 22px;
+                color: #000000;
+                opacity: 0.5;
+            }
+        }
+        .stepperItemDefault{
+            .stepperNum{
+                background: #EEEDF2 !important;
+                h1{
+                    color: #1B1B1B !important;
+                    opacity: 0.6;
+                }
+            }
+            .stepperName{
+                    opacity: 0.6 !important;
+            }
+        }
+        .stepperItemDone{
+            .stepperNum{
+                background: #7DAFFD !important;
+                h1{
+                    color: #FFFFFF !important;
+                }
+            }
+            .stepperName{
+                color: #999999 !important;
+            }
+        }
+        .stepperItem{
+            display: flex;
+            align-items: center;
+            margin-bottom: 44px;
+            &:first-child{
+                .stepperNum{
+                    &::after{
+                        content: "";
+                        height: 44px;
+                        width: 1px;
+                        position: absolute;
+                        bottom: 100%;
+                        background: transparent !important;
+                    }
+                }
+            }
+            .stepperNum{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #0063FF;
+                border-radius: 35px;
+                height: 42px;
+                width: 42px;
+                margin-right: 16px;
+                &::after{
+                    content: "";
+                    height: 44px;
+                    width: 1px;
+                    position: absolute;
+                    bottom: 100%;
+                    background: #EEEDF2;
+                }
+                h1{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 21px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding: 9px 16px;
+                }
+            }
+            .stepperName{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #383838
+            }
+        }
+    }
+    .mainContainer{
+        display: flex;
+        align-items: center;
+        padding: 100px;
+        width: 70%;
+    }
+    .errorBlock{
+        position: fixed;
+        top: 30px;
+        right: 15px;
+        display: flex;
+        align-items: center;
+        background: #F6FBFE;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0px 0px 50px rgba(152, 167, 206, 0.25);
+        h1{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            /* or 133% */
+
+
+            color: #222222;
+
+            opacity: 0.9;
+        }
+    }
+}
